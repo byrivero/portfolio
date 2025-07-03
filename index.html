@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio | Rodrigo Rivero</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navegación -->
+    <header class="cabecera">
+        <div class="contenedor">
+            <nav class="menu">
+                <div class="secciones">
+                    <a href="#inicio" class="secciones">Inicio</a>
+                    <a href="#sobre-mi" class="secciones">Sobre mí</a>
+                    <a href="#proyectos" class="secciones">Proyectos</a>
+                    <a href="#contacto" class="secciones">Contacto</a>                    
+                </div>
+                <div class="selector-idioma">
+                    <a href="index.html" title="Español">
+                      <img src="https://flagcdn.com/w40/es.png" alt="Español" width="32" height="20">
+                    </a>
+                    <a href="index.2.html" title="english">
+                        <img src="https://flagcdn.com/w40/gb.png" alt="English"  >
+                      </a>
+                  </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Presentacion -->
+    <section id="inicio" class="presentacion">
+        <div class="contenedor-presentacion">
+            <div class="presentacion-contenedor">
+                <h1>¡Hola! Soy <span class="highlight">Rodrigo</span></h1>
+                <h2>Animador 2D/3D y Realizador Audiovisual</h2>
+                <p>Especializado en animación, desarrollo contenidos visuales aplicados a entornos digitales, multimedia y narrativas interactivas.</p>
+                <div class="presentacion-buttons">
+                    <a href="#proyectos" class="btn boton-ver-todos">Ver Proyectos</a>
+                    <a href="#contacto" class="btn btn-outline">Contacto</a>
+                </div>
+            </div>
+            <div class="presentacion-image">
+                <div class="image-contenedor">
+                    <img src="imagenes/3d/malla.jpg" alt="Un trabajo de Rodrigo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="about seccion-espacio">
+        <div class="contenedor">
+            <div class="seccion-cabecera">
+                <h2 class="seccion-titulo">Sobre Mí</h2>
+                <p class="seccion-subtitulo">Conoce un poco más sobre mi experiencia y habilidades</p>
+            </div>
+            <div class="el-contenido">
+                <div class="la-imagen">
+                    <img src="imagenes/rodri figura.jpg" alt="Retrato en 3D de Rodrigo">
+                </div>
+                <div class="descripcion">
+                    <h3>Animador 2D/3D y Realizador de productos multimedia interactivos</h3>
+                    <p>Con formación en realización de audiovisuales, imagen y animación 3D, desarrollo proyectos que combinan técnica, estética y narrativa.  
+                        He trabajado con edición de vídeo, postproducción, efectos visuales y fotografía, obteniendo reconocimientos como el premio a Mejor Cortometraje y a Mejores Efectos Especiales.  </p>
+                    <p>Actualmente me estoy especializando en animación 3D y 2D utilizando herramientas como Autodesk Maya, Adobe Animate, Substance Painter, Blender, ZBrush o Unity, además de tener conocimientos de HTML y CSS para entornos web.  
+                        Soy una mente inquieta, siempre explorando nuevas ideas y formas de contar historias visuales a través del movimiento y la tecnología.</p>
+                    
+                    <div class="habilidades">
+                        <h4>Mis Habilidades</h4>
+                        <div class="habilidades">
+                            <div class="habilidades-info">
+                                <span>HTML & CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="barra-gris">
+                                <div class="barra-azul" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="habilidades">
+                            <div class="habilidades-info">
+                                <span>Adobe Ps, Pr, Ae, An...</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="barra-gris">
+                                <div class="barra-azul" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="habilidades">
+                            <div class="habilidades-info">
+                                <span>Autodesk Maya</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="barra-gris">
+                                <div class="barra-azul" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="habilidades">
+                            <div class="habilidades-info">
+                                <span>Unity</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="barra-gris">
+                                <div class="barra-azul" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="imagenes/cv_rodrigo_animacion.jpg" class="btn boton-ver-todos">Descargar CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="proyectos seccion-espacio">
+        <div class="contenedor">
+            <div class="seccion-cabecera">
+                <h2 class="seccion-titulo">Mis Proyectos</h2>
+                <p class="seccion-subtitulo">Una muestra de mi trabajo más reciente</p>
+            </div>
+            
+            <div class="contenedor-tarjetas">
+                <!-- Proyecto 1 -->
+                <div class="tarjeta-proyecto">
+                    <div class="miniatura">
+                        <img src="imagenes/3d/luxor.png" alt="Proyecto 1">
+                    </div>
+                    <div class="info-proyecto">
+                        <p class="categoria-proyecto">Modelado en 3D</p>
+                        <h3 class="proyecto-titulo">Maya, Zbrush</h3>
+                        <p class="descripcion-proyecto">Modelados en Maya, Sketchup, y diferentes tipos de renderizados.</p>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 2 -->
+                <div class="tarjeta-proyecto">
+                    <div class="miniatura">
+                        <img src="imagenes/Photoshop/Rivero_Rodrigo_ActEval2_imagen4.jpg.jpg" alt="Proyecto 2">
+                    </div>
+                    <div class="info-proyecto">
+                        <span class="categoria-proyecto">Montaje de imágenes</span>
+                        <h3 class="proyecto-titulo">Photoshop</h3>
+                        <p class="descripcion-proyecto">Montajes de mundos épicos e historias alucinantes.</p>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 3 -->
+                <div class="tarjeta-proyecto">
+                    <div class="miniatura">
+                        <img src="imagenes/after effects/after.jpg" alt="Proyecto 3">
+                    </div>
+                    <div class="info-proyecto">
+                        <span class="categoria-proyecto">Motion graphics y animación</span>
+                        <h3 class="proyecto-titulo">After effects</h3>
+                        <p class="descripcion-proyecto">Gráficos en movimiento con manejo del espacio en 2D y 3D.</p>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 4 -->
+                <div class="tarjeta-proyecto">
+                    <div class="miniatura">
+                        <img src="imagenes/Animate/rotos.jpg" alt="Proyecto 4">
+                    </div>
+                    <div class="info-proyecto">
+                        <span class="categoria-proyecto">Historias frame a frame</span>
+                        <h3 class="proyecto-titulo">Animate</h3>
+                        <p class="descripcion-proyecto">¡Desarrollo meticuloso de rotoscopias y otras animaciones!</p>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 5 -->
+                <div class="tarjeta-proyecto">
+                    <div class="miniatura">
+                        <img src="imagenes/unity.png" alt="Proyecto 5">
+                    </div>
+                    <div class="info-proyecto">
+                        <span class="categoria-proyecto">Insert coin</span>
+                        <h3 class="proyecto-titulo">Unity</h3>
+                        <p class="descripcion-proyecto">Todo gran universo empieza con una escena vacía.</p>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 6 -->
+                <div class="tarjeta-proyecto">
+                    <div class="miniatura">
+                        <img src="imagenes/edicion video/edicion.jpg" alt="Proyecto 6">
+                    </div>
+                    <div class="info-proyecto">
+                        <span class="categoria-proyecto">Edición de video</span>
+                        <h3 class="proyecto-titulo">Premiere</h3>
+                        <p class="descripcion-proyecto">La magia está en la edición.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="boton-proyectos">
+                <a href="proyectos.html" class="btn boton-ver-todos">Ver Todos los Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact seccion-espacio">
+        <div class="contenedor">
+            <div class="seccion-cabecera">
+                <h2 class="seccion-titulo">Contacto</h2>
+                <p class="seccion-subtitulo">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            </div>
+            
+            <div>
+                <div class="informacion-contacto">
+                    <div class="tarjetas-contacto">
+                        <div class="icono-contacto">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="detalles-contacto">
+                            <h3>Email</h3>
+                            <p>rodrigoriverofernandez@gmail.com</p>
+                           
+                        </div>
+                    </div>
+                    
+                    <div class="tarjetas-contacto">
+                        <div class="icono-contacto">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="detalles-contacto">
+                            <h3>Teléfono</h3>
+                            <p>+34 638 983 392</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjetas-contacto">
+                        <div class="icono-contacto">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="detalles-contacto">
+                            <h3>Ubicación</h3>
+                            <p>Oviedo, España</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="contenedor">
+                <p>&copy; 2025 Porfolio / Rodrigo Rivero Fernández. Todos los derechos reservados.</p>
+        </div>
+        
+        <div class="volver-arriba">
+            <a href="#inicio"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
