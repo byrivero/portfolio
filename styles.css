@@ -1,0 +1,477 @@
+/* ==== Esilos para bases ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ==== PAGINA PROYECTOS ==== */
+.contenedor-ps {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.bloque-imagenes {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 20px;;
+    justify-content: center;
+}
+
+.tarjeta-ps{
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 250px;
+    height: 250px;   
+}
+
+
+.seccion-espacio {
+    padding: 100px 0;
+}
+
+.Categoria{
+padding-bottom: 20px;
+
+}
+
+/* ==== UTILIDADES ==== */
+.seccion-cabecera {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.seccion-titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.seccion-subtitulo {
+    font-size: 1.1rem;
+    color: #9ca3af;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.boton-ver-todos{
+    background-color: #6366f1;
+    color: white;
+}
+
+.boton-ver-todos:hover {
+    background-color: #4f46e5;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #6366f1;
+    border: 2px solid #6366f1;
+}
+
+.btn-outline:hover {
+    background-color: #6366f1;
+    color: white;
+}
+
+/* ==== CABECERA Y NAVEGACIÓN ==== */
+.cabecera {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.secciones {
+    display: flex;
+    gap: 2rem;
+}
+
+.secciones {
+    font-weight: 500;
+    color: #111827;
+    position: relative;
+}
+
+.secciones:hover, .secciones.active {
+    color: #6366f1;
+}
+
+.selector-idioma {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.selector-idioma img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 3px;
+}
+
+.selector-idioma img:hover {
+    transform: scale(1.1);
+}
+/* ==== SECCIÓN PRESENTACION ==== */
+.presentacion {
+    min-height: 100vh;
+    display: flex;
+    padding-top: 80px;
+    background-color: #f9fafb;
+}
+
+.presentacion-2 {               /* es para los titulos de cada proyecto */
+
+    padding-top: 100px;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+}
+.contenedor-presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.presentacion-contenedor h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.presentacion-contenedor h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #9ca3af;
+}
+
+.presentacion-contenedor p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.highlight {
+    color: #6366f1;
+}
+
+.presentacion-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.presentacion-image {
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.image-contenedor {
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* ==== SECCIÓN SOBRE MÍ ==== */
+.about {
+    background-color: white;
+}
+
+.el-contenido {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.la-imagen {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    height: 700px;
+}
+
+.la-imagen{
+    transition: all 0.3s ease;
+}
+
+.la-imagen:hover img {
+    transform: scale(1.05);
+}
+.descripcion{
+    width: 70%;
+}
+
+.descripcion h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.descripcion p {
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+}
+
+.habilidades {
+    margin-bottom: 3rem;
+}
+
+.habilidades h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.habilidades {
+    margin-bottom: 1.5rem;
+}
+
+.habilidades-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.barra-gris {
+    height: 10px;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+}
+
+.barra-azul {
+    height: 100%;
+    background-color: #6366f1;
+    border-radius: 9999px;
+}
+
+/* ==== SECCIÓN PROYECTOS ==== */
+.proyectos {
+    background-color: #f9fafb;
+    padding: 80px 0;
+}
+
+/* Contenedor de proyectos con Flexbox */
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+/* Tarjetas de proyectos individuales */
+.tarjeta-proyecto {
+    width: 30%;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Miniatura del proyecto */
+.miniatura {
+    position: relative;
+    overflow: hidden;
+    height: 240px;
+}
+
+.miniatura img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-top-right-radius: 1rem;
+}
+
+.tarjeta-proyecto:hover .miniatura img {
+    transform: scale(1.1);
+}
+
+/* Información del proyecto */
+.info-proyecto {
+    padding: 1.5rem;
+}
+
+.categoria-proyecto {
+    font-size: 0.9rem;
+    color: #6366f1;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.proyecto-titulo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.descripcion-proyecto {
+    color: #9ca3af;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.boton-proyectos {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+/* ==== SECCIÓN CONTACTO ==== */
+.contacto {
+    background-color: white;
+}
+
+.informacion-contacto {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.tarjetas-contacto {
+    display: flex;
+    width: 40%;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.tarjetas-contacto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    
+}
+
+.icono-contacto {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #818cf8;
+    color: white;
+    border-radius: 9999px;
+    font-size: 1.2rem;
+    
+}
+
+.detalles-contacto h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    
+   
+}
+
+/* ==== FOOTER ==== */
+.footer {
+    background-color: #111827;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.volver-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+
+.volver-arriba a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #6366f1;
+    color: white;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+}
+
+.volver-arriba a:hover {
+    background-color: #4f46e5;
+    transform: translateY(-5px);
+}
+
+
+/* ==== PARA LAS TARJETAS PS==== */
+
+.imagen-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;     
+}
+
+
+.imagen-thumbnail {
+    transition: transform 0.3s ease;
+}
+
+
+.imagen-thumbnail:hover {
+    transform: scale(1.05) translateY(-10px);
+}
